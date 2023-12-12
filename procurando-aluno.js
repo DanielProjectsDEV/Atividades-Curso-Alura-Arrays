@@ -9,8 +9,13 @@ function alunoENota(aluno){
     if (listaDeAlunosEMedias[0].includes(aluno)) {    // Sí em listaDeAlunosEMedias no indice [0] que a é lista alunos inclui o elemento (aluno) mostrar "Aluno Cadastrado" (O método .includes sempre retorna true)
         console.log(`O Aluno ${aluno} esta Cadastrado`)
 
-        const indice = listaDeAlunosEMedias[0].indexOf(aluno) // O método indexOF dirá em qual indice o aluno informado esta na lista: listaAlunoseEMedias no indice 0 que é a lista alunos
-        const MediaDoAluno = listaDeAlunosEMedias[1][indice] // esta const vai armazenar o valor dado pelo indexOF dentro da listaDeAlunosEMedias no indice 1 que é a lista de medias.
+        // const alunos = listaDeAlunosEMedias[0]
+        // const medias = listaDeAlunosEMedias[1]
+
+        const [alunos, medias] = listaDeAlunosEMedias //Nesse modo de const os nomes entre [] esta nomeando as duas listas por ordem de indice dentro de listaDeAlunosEMedias 
+
+        const indice = alunos.indexOf(aluno) // O método indexOF dirá em qual indice o aluno informado esta na lista: listaAlunoseEMedias no indice 0 que é a lista alunos
+        const MediaDoAluno = medias[indice] // esta const vai armazenar o valor dado pelo indexOF dentro da listaDeAlunosEMedias no indice 1 que é a lista de medias.
 
         console.log(`A média do aluno informado é ${MediaDoAluno}`)
 
@@ -19,4 +24,4 @@ function alunoENota(aluno){
     }
 }
 
-alunoENota("João")   // Chamada da Function.
+alunoENota("Ana")   // Chamada da Function.
