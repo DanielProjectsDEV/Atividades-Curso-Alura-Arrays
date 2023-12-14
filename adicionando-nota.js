@@ -1,4 +1,4 @@
-const notas = [10, 6, 8] // Mesmo sendo uma constante pode-se atribuir valores na array com métotos próprios do array.
+const notas = [10, 6, 8] // Mesmo sendo uma constante pode-se atribuir valores na array com métotos próprios do array.//
 
 notas.push(7)
 
