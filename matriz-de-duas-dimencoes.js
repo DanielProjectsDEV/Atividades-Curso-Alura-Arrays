@@ -14,4 +14,4 @@ for (let i = 0; i < notasGerais.length; i++) {    //esse for vai percorres os 3 
  
 media = media/notasGerais.length
  
-console.log(media)
+//console.log(media)
